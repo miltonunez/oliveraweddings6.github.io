@@ -1,0 +1,596 @@
+/* Importing the Google Font 'Poppins' */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+/* HEADER */
+header {
+    background-image: url(img/fondo1.jpg);
+    background-position: center bottom;
+    background-repeat: repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.menu .logo1 {
+    max-width: 160px;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 160px;
+    z-index: 1000;
+    max-width: 1200px;
+}
+
+.menu .navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: right;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #c63663;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: white
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.imagotipo {
+    max-width: 200px;
+    margin: 20px;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: #c63663;
+    padding: 10px 25px;
+    margin: 20px 20px 0px 0px;
+    color: #f3f3f3;
+    border-radius: 8px;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #c63663;
+    padding: 20px;
+    margin: 30px 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+/* NUESTROS SERVICIOS */
+.servicios-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.servicios-container .servicio-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #f3f4f8;
+    align-content: flex-start;
+}
+
+.servicios-container .servicio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.servicios-container .servicio-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.servicios-container .servicio-card h2 {
+    color: #c63663;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+.servicios-container .servicio-card p {
+    margin: auto;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+.servicios-container .servicio-card a {
+    color: #c63663;
+    padding-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.servicios-container .servicio-card a:hover {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* NUESTROS DESTINOS */
+.destinos-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.destinos-container .destino-card {
+    height: 340px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #f3f4f8;
+    align-content: flex-start;
+}
+
+.destinos-container .destino-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.destinos-container .destino-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destinos-container .destino-card h2 {
+    color: #c63663;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+.destinos-container .destino-card p {
+    margin: auto;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+.destinos-container .destino-card a {
+    color: #c63663;
+    padding-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.destinos-container .destino-card a:hover {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ACERCA DE NOSOTROS */
+.nosotros-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.nosotros-container .nosotros-card {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 50px;
+    margin: 0px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #f3f4f8;
+    align-content: flex-start;
+}
+
+.nosotros-container .nosotros-card h2 {
+    z-index: 1000;
+    color: #c63663;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+.nosotros-container .nosotros-card p {
+    margin: auto;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+.flor {
+    max-width: 80px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.pp {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* PORTAFOLIO */
+.portfolio-container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 10px auto;
+}
+
+.portfolio-container .portfolio-card {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.portfolio-card:hover img {
+    background-color: #c63663
+}
+
+.portfolio-card:hover h2 {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+    width: 100%;
+    height: 100%;
+    background-color: #c63663;
+    opacity: 0.75;
+}
+
+.portfolio-card h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* CONTACTO */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0px;
+    text-align: left;
+    width: 100%;
+}
+
+input[type="text"],
+textarea,
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #c63663;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #ccc
+}
+
+/* BOTON UP */
+.up-button {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: #c63663;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.up-button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.arrow-up {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* BOTON WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.whatsapp a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: green;
+    text-align: center;
+    line-height: 100px;
+}
+
+.whatsapp img {
+    width: 100%;
+    height: auto;
+}
+
+/* PIE DE PÁG */
+footer {
+    background-color: #c63663;
+}
+
+.piedepag {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    display: block;
+    color: gray;
+    text-decoration: none;
+}
+
+/* RESPONSIVA */
+@media (max-width:1080px) {
+    .logo1 {
+        position: absolute;
+        top: 10px;
+    }
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+        position: absolute;
+        margin: 0;
+        align-items: right;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        background-color: black;
+        display: none;
+    }
+
+    .menu .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu-ico {
+        display: initial;
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        max-width: 30px;
+    }
+
+    #menu:checked~.navbar {
+        display: block;
+        align-items: center;
+        text-align: center;
+        margin-top: 55px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 8px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #c63663;
+    }
+
+    .servicios-container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 0px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .destinos-container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 0px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px 20px;
+    }
+
+    .portfolio-container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 0px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .piedepag {
+        font-size: 14px;
+        display: block;
+    }
+
+    .piedepag p {
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+}
